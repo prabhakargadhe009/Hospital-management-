@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>CityCare Hospital</h1>
+    <nav>
+        <a href="#" id="nav-home">Home</a>
+        <a href="#" id="nav-book">Book Appointment</a>
+        <a href="#" id="nav-appointments">Appointments</a>
+    </nav>
+</header>
+
+<!-- MAIN CONTENT (populated by JS) -->
+<main id="main-content"></main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 CityCare Hospital. All rights reserved.</p>
+</footer>
+
+<!-- AI ASSISTANT HELPER -->
+<button id="assistant-fab" onclick="toggleAssistant()" title="Hospital Assistant">
+    🏥
+    <span class="fab-badge">AI</span>
+</button>
+
+<div id="assistant-panel">
+    <div class="asst-header">
+        <div class="asst-avatar">🤖</div>
+        <div class="asst-header-info">
+            <div class="asst-header-name">CityCare Assistant</div>
+            <div class="asst-header-status">
+                <span class="asst-status-dot"></span> Online – Ready to help
+            </div>
+        </div>
+        <button class="asst-header-close" onclick="toggleAssistant()" title="Close">✕</button>
+    </div>
+    <div class="asst-messages" id="asst-messages"></div>
+    <div class="asst-quick-btns" id="asst-quick-btns">
+        <button class="asst-quick-btn" onclick="quickAsk('How do I book an appointment?')">📅 Book Appointment</button>
+        <button class="asst-quick-btn" onclick="quickAsk('What departments are available?')">🏥 Departments</button>
+        <button class="asst-quick-btn" onclick="quickAsk('What are the consultation fees?')">💰 Fees</button>
+        <button class="asst-quick-btn" onclick="quickAsk('How do I print my receipt?')">🖨 Print Receipt</button>
+    </div>
+    <div class="asst-input-row">
+        <input id="asst-input" type="text" placeholder="Ask me anything…"
+               onkeydown="if(event.key==='Enter') sendMessage()">
+        <button id="asst-send" onclick="sendMessage()" title="Send">➤</button>
+    </div>
+</div>
+
+<!-- PRINT RECEIPT OVERLAY -->
+<div id="print-overlay">
+    <div class="print-modal-btns">
+        <button class="btn-teal" onclick="window.print()">🖨 Print / Save as PDF</button>
+        <button onclick="closePrint()">✕ Close</button>
+    </div>
+    <div class="receipt-sheet" id="receipt-sheet"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
