@@ -42,3 +42,18 @@ A modern and responsive **Hospital Management System** built using HTML, CSS, an
 
 - Prabhakar (GitHub: prabhakargadhe009)
 - Akash (GitHub: akash-codes182)
+## 🎓 College Project
+
+This project was developed as a collaborative college project.
+
+### 👥 Contributions
+
+- **Prabhakar**
+  - UI Design (HTML, CSS)
+  - Appointment Booking System
+  - Receipt Generation
+
+- **Akash (akash-codes182)**
+  - AI Assistant Logic
+  - JavaScript Functionality
+  - Testing & Improvements
