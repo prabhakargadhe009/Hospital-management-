@@ -38,3 +38,7 @@ A modern and responsive **Hospital Management System** built using HTML, CSS, an
    ```bash
    git clone https://github.com/your-username/Hospital-management-.git
 
+## 👨‍💻 Team Members
+
+- Prabhakar (GitHub: prabhakargadhe009)
+- Akash (GitHub: akash-codes182)
