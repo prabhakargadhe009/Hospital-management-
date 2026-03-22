@@ -37,3 +37,4 @@ A modern and responsive **Hospital Management System** built using HTML, CSS, an
 1. Download or clone the repository:
    ```bash
    git clone https://github.com/your-username/Hospital-management-.git
+
